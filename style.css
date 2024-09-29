@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /**
+    =========================
+    * FONT FAMILY VARIABLES
+    *=========================
+    */
+  --head-font: "Oswald", sans-serif;
+  --child-font: "Roboto", sans-serif;
+
+  /**
+  =========================
+  * FONT WEIGHT VARIABLES
+  *=========================
+  */
+  --head-font-200: 200;
+  --head-font-300: 300;
+  --head-font-400: 400;
+  --head-font-500: 500;
+  --head-font-600: 600;
+  --head-font-700: 700;
+
+  --child-font-100: 100;
+  --child-font-300: 300;
+  --child-font-400: 400;
+  --child-font-500: 500;
+  --child-font-700: 700;
+  --child-font-900: 900;
+
+  /**
+  =========================
+  * COLOR VARIABLES
+  *=========================
+  */
+  --color-1: #179bae;
+  --color-3: #ffffff;
+  --color-4: #333333;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--child-font);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--head-font);
+}
+
+h1 {
+  font-weight: var(--head-font-600);
+  font-size: 3rem;
+}
+h2 {
+  font-weight: var(--head-font-500);
+  font-size: 2.5rem;
+}
+h3,
+h4 {
+  font-weight: var(--head-font-400);
+  font-size: 2rem;
+}
+
+h4 {
+  font-size: 1.6rem;
+}
+
+p,
+a,
+span,
+li,
+button,
+label {
+  font-size: 16px;
+  font-weight: var(--child-font-400);
+  list-style: none;
+  text-decoration: none;
+}
+
+section,
+.section {
+  width: 100%;
+  padding: 0 1rem;
+}
+
+.container {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+input {
+  padding: 0.8rem 0.5rem;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 0 2px var(--color-4);
+  outline: none;
+}
+
+button,
+.button {
+  padding: 0.8rem 1rem;
+  border-radius: 8px;
+  border: none;
+  background-color: var(--color-1);
+  color: var(--color-3);
+  cursor: pointer;
+}
+
+button:disabled,
+.button:disabled {
+  background-color: #273d41;
+}
